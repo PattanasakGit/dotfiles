@@ -1,0 +1,5 @@
+[user]
+	email = pattanasak.ata@dplusonline.net
+	name = Pattanasak
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/

@@ -1,0 +1,13 @@
+# VS Code Extensions List
+# สร้างโดยคำสั่ง: code --list-extensions
+
+# หมายเหตุ: ไฟล์นี้จะถูกสร้างขึ้นใหม่เมื่อรัน setup script
+# หากต้องการเพิ่ม extensions ใหม่ ให้เพิ่มที่นี่
+
+# Example Extensions (ลบ # ออกเพื่อใช้งาน)
+# ms-python.python
+# ms-vscode.cpptools
+# ms-vscode.vscode-typescript-next
+# esbenp.prettier-vscode
+# bradlc.vscode-tailwindcss
+# ms-vscode.vscode-json

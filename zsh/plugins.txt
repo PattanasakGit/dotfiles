@@ -1,0 +1,61 @@
+# Oh My Zsh Plugins ที่แนะนำ
+
+## Plugins ที่ติดตั้งแล้ว
+git                    # Git integration และ aliases
+zsh-autosuggestions   # แนะนำคำสั่งจากประวัติ
+zsh-syntax-highlighting # Syntax highlighting
+
+## Plugins เพิ่มเติมที่แนะนำ
+web-search            # ค้นหาบน Google, GitHub ผ่าน terminal
+colored-man-pages     # Man pages สีสัน
+extract               # แตกไฟล์ archive ด้วยคำสั่ง x
+z                     # Jump to directories
+kubectl               # Kubernetes completion
+docker                # Docker completion
+npm                   # NPM completion
+yarn                  # Yarn completion
+node                  # Node.js utilities
+brew                  # Homebrew completion (macOS)
+macos                 # macOS specific commands
+
+## การติดตั้ง Plugin เพิ่มเติม
+
+### Built-in Plugins (แก้ไขใน .zshrc)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search colored-man-pages extract z)
+
+### Custom Plugins (ต้องติดตั้งเพิ่ม)
+
+# zsh-completions (เพิ่ม completions)
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+# fast-syntax-highlighting (เร็วกว่า zsh-syntax-highlighting)
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+
+# zsh-history-substring-search (ค้นหาประวัติด้วย arrow keys)
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+
+# autojump (เร็วกว่า z plugin)
+brew install autojump  # macOS
+echo 'eval "$(autojump --init)"' >> ~/.zshrc
+
+## เคล็ดลับการใช้งาน
+
+### Git Aliases (จาก git plugin)
+ga    = git add
+gc    = git commit
+gco   = git checkout
+gd    = git diff
+gl    = git pull
+gp    = git push
+gst   = git status
+
+### Web Search
+google <คำค้นหา>     # ค้นหาใน Google
+github <คำค้นหา>     # ค้นหาใน GitHub
+stackoverflow <คำค้นหา> # ค้นหาใน Stack Overflow
+
+### Extract Plugin
+x <ไฟล์>            # แตกไฟล์ archive อัตโนมัติ
+
+### Z Plugin
+z <ชื่อโฟลเดอร์>     # Jump ไปโฟลเดอร์ที่เคยเข้า
