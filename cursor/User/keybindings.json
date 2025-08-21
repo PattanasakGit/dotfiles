@@ -1,0 +1,114 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+t",
+        "command": "showCustomTitleBar",
+        "when": "!titleBarVisible"
+    },
+    {
+        "key": "alt+cmd+-",
+        "command": "workbench.action.terminal.fontZoomOut"
+    },
+    {
+        "key": "alt+cmd+=",
+        "command": "workbench.action.terminal.fontZoomIn"
+    },
+    {
+        "key": "alt+cmd+0",
+        "command": "workbench.action.terminal.fontZoomReset"
+    },
+    {
+        "key": "cmd+s cmd+c",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "cmd+escape cmd+1",
+        "command": "workbench.action.openView"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "key": "cmd+e",
+      "command": "composerMode.background"
+    },
+    {
+      "key": "cmd+g cmd+g",
+      "command": "workbench.view.extension.gitlensPanel"
+    },
+    {
+      "key": "ctrl+1",
+      "command": "-workbench.action.openEditorAtIndex1"
+    },
+    {
+      "key": "ctrl+2",
+      "command": "-workbench.action.openEditorAtIndex2"
+    },
+    {
+      "key": "ctrl+1",
+      "command": "workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+      "key": "shift+cmd+e",
+      "command": "-workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+      "key": "ctrl+2",
+      "command": "workbench.view.scm",
+      "when": "workbench.scm.active"
+    },
+    {
+      "key": "ctrl+shift+g",
+      "command": "-workbench.view.scm",
+      "when": "workbench.scm.active"
+    },
+    {
+      "key": "ctrl+2",
+      "command": "workbench.view.scm",
+      "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+      "key": "ctrl+shift+g",
+      "command": "-workbench.view.scm",
+      "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+      "key": "alt+g",
+      "command": "git-graph.view"
+    }
+]
